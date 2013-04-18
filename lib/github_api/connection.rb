@@ -26,9 +26,9 @@ module Github
     def default_options(options={})
       {
         :headers => {
-          ACCEPT           => "application/vnd.github.v3.full+json," \
-                              "application/vnd.github.beta.full+json;q=0.7," \
-                              "application/vnd.github+json;q=0.5," \
+          ACCEPT           => #"application/vnd.github.v3.full+json," \
+                              #"application/vnd.github.beta.full+json;q=0.7," \
+                              #"application/vnd.github+json;q=0.5," \
                               "application/json;q=0.1",
           ACCEPT_CHARSET   => "utf-8",
           USER_AGENT       => user_agent,
